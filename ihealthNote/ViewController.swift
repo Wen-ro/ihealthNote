@@ -10,6 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var AccountTextField: UITextField!
+    
+    @IBOutlet weak var PasswordTextField: UITextField!
+    
+    @IBAction func LoginButtonClicked(_ sender: Any) {
+        
+        let account = AccountTextField.text
+        let password = PasswordTextField.text
+        
+        print("account:\( account));password:\(password)")
+        
+        self.performSegue(withIdentifier: "MoveToMainViewSegue", sender: self)
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -62,11 +79,6 @@ class ViewController: UIViewController {
         }
     
     override func viewWillAppear(_ animated: Bool) {
-        <#code#>
+        // something
     }
-        
-    }
-
-
-
-
+}
