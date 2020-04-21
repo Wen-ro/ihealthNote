@@ -22,8 +22,7 @@ class ViewController: UIViewController {
         print("account:\( account));password:\(password)")
         
         self.performSegue(withIdentifier: "MoveToMainViewSegue", sender: self)
-        
-        
+
         
     }
     
